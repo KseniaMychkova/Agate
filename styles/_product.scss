@@ -1,0 +1,30 @@
+.product {
+    margin: 0 auto;
+    @media screen and (max-width: 1250px) {
+        padding-right: 52px;
+        padding-left: 52px;
+    }
+    .product__text {
+        @include p-font-style;
+        color: $text-color;
+        margin-bottom: 60px;
+        @media screen and (max-width: 1024px) {
+            font-size: .88rem;
+            margin-bottom: 48px;
+        }
+        @media screen and (max-width: 1023px) {
+            font-size: $button-font;
+            margin-bottom: 58px;
+        }
+    }
+    .product__container {
+        display: flex;
+        gap: 48px;
+        @media screen and (max-width: 1023px) {
+            flex-direction: column;
+        }
+    }
+    .button {
+        @include button-style($primary-color, $primary-color);
+    }
+}

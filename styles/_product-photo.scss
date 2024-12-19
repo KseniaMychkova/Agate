@@ -1,0 +1,38 @@
+        .product-photo {
+            position: relative;
+            //width: 360px;
+            flex: 1;
+            &::before {
+                content: "";
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                position: absolute;
+                top: -29px;
+                left: -29px;
+                color: $secondary-color;
+                font-size: .56rem;
+                font-weight: 600;
+                line-height: 58px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            &.product-photo--hot::before {
+                content: "hot!";
+                background-color: #D33B3B;
+            }
+            &.product-photo--new::before {
+                content: "new!";
+                background-color: #B3E151;
+            }
+            &.product-photo--hit::before {
+                content: "hit!";
+                background-color: #E5A434;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                //width: 360px;
+                //height: 230px;
+            }
+        }

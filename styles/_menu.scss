@@ -1,0 +1,50 @@
+.menu {
+    position: absolute;
+    right: 358px;
+    top: 62px;
+    font-size: .88rem;
+    @media screen and (max-width: 1680px) {
+        right: 250px;
+    }
+    @media screen and (max-width: 1590px) {
+        right: 180px;
+    }
+    @media screen and (max-width: 1440px) {
+        right: 118px;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: $small-font;
+        right: 31px;
+        top: 23px;
+    }
+    @media screen and (max-width: 768px) {
+        right: 13px;
+        top: 19px;
+    }
+    .menu__item {
+        text-decoration: none;
+        font-weight: 400;
+        color: $secondary-color;
+        &:not(:last-child)::after {
+            content: "│";
+            display: inline-block;
+            width: 1.5px;
+            /*не применяются размеры к палочкам*/
+            height: 16px;
+            color: #D8D5D5;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        @media screen and (max-width: 650px) {
+            display: block;
+            font-size: $small-font;
+            text-align: left;
+            &:not(:last-child)::after {
+                content: "―";
+                display: block;
+                padding: 2px 0;
+                width: 100px;
+            }
+        }
+    }
+}

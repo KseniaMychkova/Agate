@@ -1,0 +1,59 @@
+    .main {
+        background-image: url("../img/background-main.jpg");
+        background-size: cover;
+        height: 947px;
+        width: 100%;
+        padding-bottom: 0;
+        padding-top: 0;
+        color: $secondary-color;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 947px;
+            background-color: rgba(0, 0, 0, 0.48);
+            z-index: 1;
+        }
+
+        .main__text {
+            font-size: $text-font;
+            font-weight: 400;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .button {
+            @include button-style($secondary-color,
+                $secondary-color);
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .main {
+            height: 724px;
+
+            &::before {
+                height: 724px;
+            }
+
+            .main__text {
+                font-size: $small-font;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .main {
+            height: 676px;
+
+            &::before {
+                height: 676px;
+            }
+        }
+    }

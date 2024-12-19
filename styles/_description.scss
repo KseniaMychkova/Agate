@@ -1,0 +1,39 @@
+.description {
+    background-color: $bgc-first;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    p {
+        @include p-font-style;
+        max-width: 941px;
+    }
+    .scrollbar {
+        content: "";
+        position: fixed;
+        bottom: 19px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        display: block;
+        background-color: #FFAC1C;
+        border-radius: 50%;
+        color: $secondary-color;
+        background-size: cover;
+        line-height: 85px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .description p {
+        font-size: .88rem;
+        max-width: 602px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description p {
+        font-size: $button-font;
+        max-width: 541px;
+    }
+}

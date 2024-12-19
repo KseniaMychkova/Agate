@@ -1,0 +1,38 @@
+.logo {
+    font-size: 2rem;
+    display: inline-block;
+    width: 156px;
+    color: $secondary-color;
+    text-transform: uppercase;
+    position: absolute;
+    left: 372px;
+    top: 44px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1680px) {
+    .logo {
+        left: 250px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .logo {
+        left: 132px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        left: 42px;
+        top: 13px;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        left: 24px;
+        top: 8px;
+    }
+}

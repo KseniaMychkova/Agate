@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Source Serif', sans-serif;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1184px;
+    margin: 0 auto;
+    @media screen and (max-width: 1184px) {
+        width: 100%;
+        padding-right: 42px;
+        padding-left: 42px;
+    }
+}
+
+section {
+    @include section-padding;
+}

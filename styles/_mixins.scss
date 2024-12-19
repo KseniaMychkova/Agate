@@ -1,0 +1,56 @@
+@mixin button-style($bt-color, $br-color) {
+    display: flex;
+    text-decoration: none;
+    width: 312px;
+    height: 60px;
+    color: $bt-color;
+    font-size: $button-font;
+    font-weight: 600;
+    border: 2px solid $br-color;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 0;
+    transition: all .2s linear .1s;
+    &:hover {
+        color: $secondary-color;
+        background-color: #FFA60D;
+        border: none;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 248px;
+        height: 48px;
+        font-size: .68rem;
+    }
+}
+
+@mixin p-font-style {
+    font-size: $base-font;
+    font-weight: 300;
+    line-height: 137%;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (max-width: 1024px) {
+        font-size: .88rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: $button-font;
+    }
+}
+
+@mixin section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media screen and (max-width: 1024px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media screen and (max-width: 768px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+
+/*или задать эти значения просто по тегу section?*/

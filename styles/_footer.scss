@@ -1,0 +1,35 @@
+.footer {
+    background-color: $footer-color;
+    color: $secondary-color;
+    @include section-padding;
+    .footer__title {
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    .footer__text {
+        font-size: 1.4 rem;
+        line-height: 141.873%;
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: 1024px) {
+        .footer__title {
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+        .footer__text {
+            font-size: $text-font;
+            margin-bottom: 50px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .footer__title {
+            font-size: $title-font;
+            margin-bottom: 40px;
+        }
+        .footer__text {
+            font-size: .88rem;
+            margin-bottom: 40px;
+        }
+    }
+}

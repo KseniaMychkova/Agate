@@ -1,0 +1,15 @@
+.working-time {
+    color: #B1B1B1;
+}
+
+@media screen and (max-width: 1024px) {
+    .working-time {
+        font-size: $button-font;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .working-time {
+        font-size: $small-font;
+    }
+}

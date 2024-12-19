@@ -1,0 +1,43 @@
+.information {
+    background-color: $bgc-first;
+    display: flex;
+    justify-content: center;
+    .title-chef {
+        font-size: $title-font;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .information__text {
+        font-size: $text-font;
+        color: $text-color;
+        margin-bottom: 30px;
+    }
+    .information__paragraph {
+        @include p-font-style;
+        max-width: 939px;
+    }
+    @media screen and (max-width: 1024px) {
+        .title-chef {
+            font-size: 1.4rem;
+        }
+        .information__text {
+            font-size: .88rem;
+        }
+        .information__paragraph {
+            max-width: 691px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .title-chef {
+            font-size: $base-font;
+            margin-bottom: 20px;
+        }
+        .information__text {
+            font-size: .88rem;
+            margin-bottom: 20px;
+        }
+        .information__paragraph {
+            max-width: 626px;
+        }
+    }
+}
